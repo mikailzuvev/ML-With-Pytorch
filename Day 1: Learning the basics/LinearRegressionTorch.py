@@ -63,7 +63,7 @@ for epoch in range(epochs):
     #wipes out gradient created by previous loop iterations
     #makes sure to remove the gradients pytorch adds by default
     #prevents massive error from previous calculations
-    optimizer.zero_grad() # --- FIX 2: Fixed 'opimizer' typo ---
+    optimizer.zero_grad()
 
 
     #=== FORWARD PASS ===#

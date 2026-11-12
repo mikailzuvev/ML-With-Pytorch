@@ -80,6 +80,8 @@ class TFIDTextClassifier(nn.Module):
         super(TFIDTextClassifier, self).__init__()
         self.sf1 = nn.Linear(input_dim, 16)
         self.relu = nn.ReLU()
+
+        
         self.sf2 = nn.Linear(16, 1)
 
         # the sigmoid function forces all the outputs of the neural netowork to be between 1 and 0
